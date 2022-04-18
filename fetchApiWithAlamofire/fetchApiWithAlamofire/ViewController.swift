@@ -38,12 +38,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.album.image = UIImage(data: image as Data)
             }
         }
-        cell.id.text = String(data.animal_id)
-        cell.age.text = data.animal_age
-        cell.place.text = data.animal_place
-        cell.address.text = data.shelter_address
-        cell.tel.text = data.shelter_tel
-        cell.remark.text = data.animal_remark
+        cell.id.text = "Name: " + String(data.animal_id)
+        cell.age.text = "Age: " + data.animal_age
+        cell.place.text = "Place: " + data.animal_place
+        cell.address.text = "Address: " + data.shelter_address
+        cell.tel.text = "Tel: " + data.shelter_tel
+        cell.remark.text = "Remark:" + data.animal_remark
         return cell
     }
         
