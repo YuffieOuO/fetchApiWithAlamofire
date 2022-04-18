@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! MyCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell") as! MyCell
         let data = animal[indexPath.row]
         if let imageUrl = URL(string: data.album_file) {
             if let image = NSData(contentsOf: imageUrl) {
